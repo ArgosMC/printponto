@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrintPonto - Relógio de Ponto e Controle de Acesso</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Adicionando EmailJS para envio de emails -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>PrintPonto</h1>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Soluções Completas em Controle de Ponto e Acesso</h2>
+                <p>Relógios de ponto, controle de acesso informatizado com biometria facial, catracas Control ID e software especializado para sua empresa.</p>
+                <a href="#produtos" class="btn-primary">Ver Produtos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produtos Section -->
+    <section id="produtos" class="produtos">
+        <div class="container">
+            <h2>Nossos Produtos</h2>
+            <p class="subtitle">Conheça nossa linha completa de equipamentos Control ID e software Secullum</p>
+            
+            <div class="produtos-grid">
+                <!-- Relógio de Ponto Facial Control ID -->
+                <div class="produto-card">
+                    <img src="https://www.controlid.com.br/wp-content/uploads/2023/05/idfacepro-frente.png" alt="Relógio de Ponto Facial Control ID">
+                    <h3>Relógio de Ponto Facial Control ID</h3>
+                    <p>Reconhecimento facial avançado para controle de ponto preciso e seguro.</p>
+                </div>
+
+                <!-- Relógio de Ponto Control ID -->
+                <div class="produto-card">
+                    <img src="https://www.controlid.com.br/wp-content/uploads/2023/05/idclass-frente.png" alt="Relógio de Ponto Control ID">
+                    <h3>Relógio de Ponto Control ID</h3>
+                    <p>Equipamento robusto com múltiplas formas de identificação biométrica.</p>
+                </div>
+
+                <!-- Software Secullum -->
+                <div class="produto-card">
+                    <img src="https://www.secullum.com.br/wp-content/uploads/2023/03/logo-secullum-ponto.png" alt="Software Secullum">
+                    <h3>Software Secullum</h3>
+                    <p>Sistema completo de gestão de ponto eletrônico e controle de jornada.</p>
+                </div>
+
+                <!-- Catracas Control ID -->
+                <div class="produto-card">
+                    <img src="https://www.controlid.com.br/wp-content/uploads/2023/05/idblock-frente.png" alt="Catracas Control ID">
+                    <h3>Catracas para Acesso Control ID</h3>
+                    <p>Controle de acesso automatizado com tecnologia biométrica avançada.</p>
+                </div>
+
+                <!-- Software RHID -->
+                <div class="produto-card">
+                    <img src="https://www.controlid.com.br/wp-content/uploads/2023/05/rhid-logo.png" alt="Software RHID">
+                    <h3>Software RHID</h3>
+                    <p>Plataforma integrada para gestão completa de recursos humanos e controle de acesso.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <h2>Sobre a PrintPonto</h2>
+            <div class="sobre-content">
+                <p>A PrintPonto é especializada em soluções completas de controle de ponto e controle de acesso informatizado. Trabalhamos com as melhores marcas do mercado, oferecendo equipamentos de última geração com tecnologia biométrica facial, catracas automatizadas e software especializado.</p>
+                <p>Nossa expertise inclui relógios de ponto Control ID, sistemas de controle de acesso com biometria, catracas inteligentes e software de gestão Secullum e RHID, proporcionando soluções integradas para empresas de todos os portes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="contato">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <div class="contato-content">
+                <div class="contato-info">
+                    <h3>Fale Conosco</h3>
+                    <p>📞 (11) 9999-9999</p>
+                    <p>📧 amcmogi@gmail.com</p>
+                    <p>📍 São Paulo, SP</p>
+                </div>
+                <!-- Atualizando formulário com IDs e campos necessários para envio de email -->
+                <form id="contact-form" class="contato-form">
+                    <input type="text" name="from_name" placeholder="Seu nome" required>
+                    <input type="email" name="from_email" placeholder="Seu e-mail" required>
+                    <input type="text" name="phone" placeholder="Seu telefone (opcional)">
+                    <textarea name="message" placeholder="Sua mensagem" rows="5" required></textarea>
+                    <button type="submit" class="btn-primary">Enviar Mensagem</button>
+                </form>
+                <!-- Adicionando div para mostrar status do envio -->
+                <div id="form-status" class="form-status"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 PrintPonto. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
