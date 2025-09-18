@@ -13,7 +13,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 })
 
 // Inicializar EmailJS
-const emailjs = window.emailjs // Declare the emailjs variable
+//const emailjs = window.emailjs // Declare the emailjs variable
 
 // Aguardar o EmailJS carregar completamente
 function initEmailJS() {
